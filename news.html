@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="Mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrickyAI</title>
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/thumbnails/003/171/355/small/objective-lens-icon-with-six-rainbow-colors-vector.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-white dark:bg-gray-900 dark:text-white">
+
+
+    <header >
+        <nav class="flex justify-between items-center px-5  md:px-16 lg:px-28 py-2 md:py-2 mx-2 lg:mx-auto gap-10 my-5">
+            <div class="logo flex items-center">
+                <a href="index.html"><img src="./images/tickerAI-logo 1.png" alt="Logo" class="h-8 md:h-10"></a>
+
+                <p class="ml-3 md:ml-5 hidden sm:block dark:text-white" id="navPara">
+                    A Mark Cuban Company
+                    <br>AI-based Financial Market News Aggregator
+                </p>
+            </div>
+    
+            <div class="button flex items-center gap-4 md:gap-8">
+                <a href="news.html">
+                    <button class="navBtn text-white text-center rounded-xl px-4 py-2 transition-all hover:scale-105 ">
+                        Personalize News
+                    </button>
+                </a>
+
+                <img src="./images/Group 1.png" alt="ik" class="h-6 md:h-8  transition-all hover:scale-150 ">
+                <img  id="switch"  src="./images/Vector.png" alt="Vector" class="vector h-6 md:h-8  transition-all hover:scale-125 dark:text-stone-100">
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-[#F0F0F0] md:px-4 w-full min-h-screen dark:bg-gray-900">
+        <section class="container mx-auto md:py-12 py-8">
+            <div class="flex items-center justify-between pb-1 md:pb-2.5 border-b md:border-b-[3px] md:mx-16">
+                <h3 class="md:text-2xl text-lg upper font-semibold text-[#333333]  dark:text-w">Personolize your news</h3>
+            </div>
+
+            <div class="bg-white max-w-lg  mx-auto md:mt-10 p-8 ">
+                <h3 class="font-semibold md:text-2xl textlg text-center text-[#333333] dark:text-black">Select your  Markets</h3>
+
+                <div class="py-5 space-y-5">
+                    <p class="news-head dark:text-black" >Stocks</p>
+                    <p class="news-head dark:text-black" >Crypto</p>
+                    <p class="news-head dark:text-black" >Economy & Business</p>
+                    <p class="news-head dark:text-black" >Commodities | Forex</p>
+                    <p class="news-head dark:text-black" >Fixed Income</p>
+                </div>
+            <button class="bg-[#5677AC] w-full py-2 md:py-4  rounded-full text-white md:text-lg font-medium hover:bg-[#42669e] transition-all duration-300 hover:scale-105 cursor-pointer">Continue</button>
+
+            </div>
+        </section>
+    </section>
+
+<footer class="text-center text-black  pb-5 w-full dark:text-white">
+    All right reserved to TickerAI - 2024
+</footer>
+<script>
+    const htmlTag = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click" , function() {
+        htmlTag.classList.toggle("dark")
+    })
+</script>
+
+</body>
+</html>

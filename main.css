@@ -1,0 +1,61 @@
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer utilities {
+    .caption {
+        @apply bg-black text-white text-xs uppercase px-1.5 py-0.5 rounded-sm;
+    }
+    .tag {
+        @apply bg-[#5677AC26] text-black text-xs md:text-sm uppercase px-1.5 py-0.5 rounded-sm hover:bg-black hover:text-white transition-all cursor-pointer;
+    }
+
+    .news-head{
+        @apply bg-[#E6EBF3] text-center rounded-full md:py-4 py-2 font-medium md:text-lg hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer;
+    }
+    }
+
+    .navBtn {
+    height: 45px;
+    width: 169px;
+    background: #5677AC;
+    }
+
+    .button img {
+    height: 28px;
+    width: 28px;
+    }
+
+    @media (max-width: 640px) {
+    .navBtn {
+        display: none;
+    }
+    }
+    body.dark {
+        color: white;
+    }
+    
+    .dark #navPara {
+        color: white;
+    }
+    
+    .dark .navBtn {
+        color: white;
+    }
+    
+    .dark h1,
+    .dark h2,
+    .dark h3,
+    .dark h4,
+    .dark p,
+    .dark span,
+    .dark input::placeholder {
+        color: white;
+    }
+
+    .dark input,
+    .dark input::placeholder {
+        color: black !important;
+    }
+
+    
